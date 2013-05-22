@@ -1,0 +1,20 @@
+ModuleLoader: A library loading LLVM Bitcode/Assembly files as an LLVM Module
+================================
+
+This directory and its subdirectories contain source code for the Module Loader,
+A library loading LLVM Bitcode/Assembly files as an LLVM Module.
+
+ModuleLoader is open source software. You may freely distribute it under the terms of
+the license agreement found in LICENSE.txt.
+
+The directory of src contains the source code for ModuleLoader library. 
+And the directory of example illustrates the usage of ModuleLoader.
+
+This library keeps up the newest LLVM in the repository.
+We will make it support the older LLVM in the future.
+
+Usage of the example:
+Go into test dir:
+xuzb:ModuleLoader/test$ ./main test1.o test2.s
+
+It will merge modules of test1.o and test2.s as one module that is dumpped at last.
