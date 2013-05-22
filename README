@@ -14,7 +14,7 @@ This library keeps up the newest LLVM in the repository.
 We will make it support the older LLVM in the future.
 
 Usage of the example:
-Go into test dir:
-xuzb:ModuleLoader/test$ ./main test1.o test2.s
+Go into the test dir and run:
+xuzb:ModuleLoader/test$ ../example/main test1.o test2.s
 
 It will merge modules of test1.o and test2.s as one module that is dumpped at last.
