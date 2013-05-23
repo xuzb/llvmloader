@@ -1,0 +1,4 @@
+example/main
+*.o
+*.a
+*.s
