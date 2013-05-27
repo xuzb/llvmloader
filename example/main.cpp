@@ -6,7 +6,7 @@
 static llvm::cl::list<std::string>
 InputFilenames(llvm::cl::Positional, llvm::cl::desc("<input preprocessed files>"));
 
-using namespace xuzb;
+using namespace laser;
 
 int main(int argc, char **argv) {
   llvm::cl::ParseCommandLineOptions(argc, argv, "main");

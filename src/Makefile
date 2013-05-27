@@ -9,7 +9,7 @@ LIB = libModuleLoader.a
 all: $(OBJECTS) $(LIB)
 %.o: %.cpp
 	$(CXX) -c -o $@ $< $(CXXFLAGS)
-$(LIB):
+$(LIB): $(OBJECTS)
 	ar rcs $(LIB) $(OBJECTS)
 
 clean:

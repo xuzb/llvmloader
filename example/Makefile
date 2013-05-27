@@ -12,11 +12,10 @@ all: $(OBJECTS) $(EXE)
 
 %.o: %.cpp
 	$(CXX) -c -o $@ $< $(CXXFLAGS) 
-$(EXE): ModuleLoader
+$(EXE): ../src/libModuleLoader.a
 	$(CXX) -o $(EXE) $(OBJECTS) -L../src/ -lModuleLoader $(LLVMLDFLAGS)
 
-.PHONY: ModuleLoader
-ModuleLoader:
+../src/libModuleLoader.a:
 	$(MAKE) -C ../src/
 
 clean:

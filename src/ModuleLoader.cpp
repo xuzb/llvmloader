@@ -13,7 +13,7 @@
 #include "llvm/Assembly/Parser.h"
 #include <string>
 
-using namespace xuzb;
+using namespace laser;
 
 Module *ModuleLoader::loadInputFiles(const std::list<std::string> &inputFilenames) {
   OwningPtr<Module> mainModule;

@@ -14,7 +14,7 @@ class raw_ostream;
 
 using namespace llvm;
 
-namespace xuzb {
+namespace laser {
 
 class ModuleLoader {
   typedef std::list<std::string> ErrorMsgList;
